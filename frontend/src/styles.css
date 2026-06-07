@@ -1,0 +1,39 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  @apply font-sans bg-kiko-light text-kiko-dark dark:bg-kiko-dark-bg dark:text-kiko-dark-text;
+}
+
+.container {
+  @apply mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.btn-primary {
+  @apply px-4 py-2 rounded-kiko bg-kiko-brand text-white font-semibold hover:opacity-90 transition-all;
+}
+
+.btn-success {
+  @apply px-4 py-2 rounded-kiko bg-kiko-success text-white font-semibold hover:opacity-90 transition-all;
+}
+
+.btn-warning {
+  @apply px-4 py-2 rounded-kiko bg-kiko-warning text-white font-semibold hover:opacity-90 transition-all;
+}
+
+.card {
+  @apply bg-white dark:bg-kiko-dark-card rounded-kiko shadow-kiko p-6;
+}
+
+.badge-pending {
+  @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-yellow-100 text-kiko-warning;
+}
+
+.badge-success {
+  @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-green-100 text-kiko-success;
+}
+
+.badge-danger {
+  @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-red-100 text-kiko-danger;
+}
